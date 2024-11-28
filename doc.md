@@ -12,11 +12,11 @@ Une fois la machine virtuelle déployée, j'ai installé Java et Jenkins. Cepend
 
 Après cette configuration, Java et Jenkins ont été correctement installés et sont maintenant fonctionnels sur la machine virtuelle.
 
-**Azure CLI**
+**Installation Azure CLI**
 
 Pour installer Azure CLI, procédez comme suit :
 
-Mettez à jour et installez les packages requis pour l’installation :
+1 - Mettez à jour et installez les packages requis pour l’installation :
 - Obtenez les packages nécessaires pour le processus d’installation :
   
 ```bash
@@ -26,7 +26,7 @@ sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
 
 ```
 
-- Téléchargez et installez la clé de signature Microsoft :
+2 - Téléchargez et installez la clé de signature Microsoft :
 
 ```cosnol
 sudo mkdir -p /etc/apt/keyrings
@@ -37,7 +37,7 @@ sudo chmod go+r /etc/apt/keyrings/microsoft.gpg
 
 ```
 
-- Ajoutez le référentiel de logiciels Azure CLI :
+3 - Ajoutez le référentiel de logiciels Azure CLI :
 
 ```consol 
 
@@ -47,18 +47,22 @@ sudo tee /etc/apt/sources.list.d/azure-cli.list
 
 ```
 
-- Mettez à jour les informations concernant le référentiel, puis installez le package azure-cli :
+4 - Mettez à jour et installez Azure CLI :
   
 ```consol 
 sudo apt-get update
 sudo apt-get install azure-cli
 
 ```
+### **Installation de Docker**
+
 
 * **Docker** : https://www.it-connect.fr/installation-pas-a-pas-de-docker-sur-debian-11/
 
+### **Installation autres outils**
 
-* **jq** 
+**jq** 
+
 ```consol 
 sudo apt install jq
 ```
