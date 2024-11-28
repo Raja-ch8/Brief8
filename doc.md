@@ -4,7 +4,7 @@
 
 L'objectif de ce projet est de mettre en place un pipeline automatisé pour la gestion des images Docker, garantissant leur mise à jour continue à chaque modification de l'application. Il s'agit également de déployer un pipeline d'intégration et de déploiement continus (CI/CD) pour l'application Azure Voting et sa base de données Redis. 
 
-### *Méthode*
+### *Installation et configuration des outils nécessaires*
 
 **1. J'ai créé la machine virtuelle en utilisant les scripts fournis dans le brief précédent (Brief 7), notamment les fichiers main.tf, variables.tf, et providers.tf.**
 
@@ -12,11 +12,14 @@ Une fois la machine virtuelle déployée, j'ai installé Java et Jenkins. Cepend
 
 Après cette configuration, Java et Jenkins ont été correctement installés et sont maintenant fonctionnels sur la machine virtuelle.
 
-* **Installé Azure Cli**
-  
+**Azure CLI**
+
+Pour installer Azure CLI, procédez comme suit :
+
+Mettez à jour et installez les packages requis pour l’installation :
 - Obtenez les packages nécessaires pour le processus d’installation :
   
-```consol 
+```bash
 
 sudo apt-get update
 sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
