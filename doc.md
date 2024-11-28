@@ -1,16 +1,16 @@
 # **Brief 8 - Complete CI/CD**
 
-### *Contexte du projet*
+### **Contexte du projet**
 
-- Créer un pipeline qui automatise l'image Docker à chaque mise à jour.
-- déployer un pipeline d'intégration et de déploiement continu pour l'application **AZURE VOTING** et sa base de données REDIS.
+L'objectif de ce projet est de mettre en place un pipeline automatisé pour la gestion des images Docker, garantissant leur mise à jour continue à chaque modification de l'application. Il s'agit également de déployer un pipeline d'intégration et de déploiement continus (CI/CD) pour l'application Azure Voting et sa base de données Redis. 
 
 ### *Méthode*
 
-**1. J'ai créé le mv en utilisant les scripts du brief précédent (Brief7) : main.tf, variable.tf et providers.tf.**
+**1. J'ai créé la machine virtuelle en utilisant les scripts fournis dans le brief précédent (Brief 7), notamment les fichiers main.tf, variables.tf, et providers.tf.**
 
-Après avoir créé la machine virtuelle j'ai installé java et jenkins (j'ai eu du mal à installer jenkins car la taille de Debian il été pas suffisant du coup j'ai modifier la taille de Debian à *"Standard_A2_v2"* ).
-Sur la mv j'ai installer:
+Une fois la machine virtuelle déployée, j'ai installé Java et Jenkins. Cependant, j'ai rencontré un problème lors de l'installation de Jenkins en raison de la taille initiale insuffisante de l'instance Debian. Pour résoudre cela, j'ai modifié la taille de l'instance en passant à Standard_A2_v2, ce qui a permis d'allouer les ressources nécessaires.
+
+Après cette configuration, Java et Jenkins ont été correctement installés et sont maintenant fonctionnels sur la machine virtuelle.
 
 * **Installé Azure Cli**
   
